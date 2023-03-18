@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  font-family: 'Tilt Warp', sans-serif;
+  background: linear-gradient(90deg, #adc3c8 0%, #acc2e0 100%);
+  height: 100vh;
+  /*overflow: hidden;*/
+}
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#mainText{
+  font-family: 'Tilt Warp', sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  margin: 20px;
+  padding: 0px;
+  color: #fff;
+  margin-top: 20px;
+}
+#score{
+  font-family: 'Tilt Warp', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: #e4d9d9;
+}
+#countNumber{
+  font-family: 'Tilt Warp', sans-serif;
+  font-size: 7rem;
+  text-align: center;
+  margin: 50px;
+  padding: 0px;
+  color: #000;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  font-family: 'Tilt Warp', sans-serif;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px 15px;
+}
+
+/* animatin */
+.animate {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
